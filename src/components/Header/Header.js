@@ -14,11 +14,11 @@ class Header extends Component {
   renderLogoutLink() {
     return (
       <div>
-        <span>
+        <span className='hello'>
           {this.context.user.name}
         </span>
         <nav>
-          <Link
+          <Link className='text-link'
             onClick={this.handleLogoutClick}
             to='/login'>
             Logout
@@ -31,24 +31,30 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <nav>
-        <Link to='/login'>Login</Link>
+        <Link className='text-link'
+         to='/login'>Login</Link>
         {' '}
-        <Link to='/register'>Sign up</Link>
+        <Link className='text-link'
+        to='/register'>Sign up</Link>
       </nav>
     )
   }
 
   render() {
     return (
-      <header>
-        <h1>
-          <Link to='/'>
-            Spaced repetition
+      <header className='header'>
+        <div className="flex header-content">
+          <h1>
+            <Link className='spaced-rep-link'
+              to='/'>
+              Creole Spaced 
+              Repetition
           </Link>
-        </h1>
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
+          </h1>
+          {TokenService.hasAuthToken()
+            ? this.renderLogoutLink()
+            : this.renderLoginLink()}
+        </div>
       </header>
     );
   }
