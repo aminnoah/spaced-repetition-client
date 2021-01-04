@@ -47,7 +47,7 @@ class Header extends Component {
           <h1>
             <Link className='spaced-rep-link'
               to='/'>
-              Creole Spaced 
+              Creole With Spaced
               Repetition
           </Link>
           </h1>
