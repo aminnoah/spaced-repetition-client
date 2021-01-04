@@ -19,6 +19,8 @@ class LoginRoute extends Component {
     return (
       <section className='registration-page'>
         <h2>Login</h2>
+        <p>demo username: demo</p>
+        <p>demo password: Password1</p>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
         />

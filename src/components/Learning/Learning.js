@@ -109,7 +109,10 @@ class Learning extends Component{
   render(){
     return (
       <div className="learning">
-        <h2>Translate the word:</h2><span>{this.context.nextWord ?  this.state.results ? this.context.currentWord.nextWord : this.context.nextWord.nextWord : null}</span>
+        <h2>Translate the word:</h2>
+        
+        <span>
+          {this.context.nextWord ?  this.state.results ? this.context.currentWord.nextWord : this.context.nextWord.nextWord : null}</span>
         <h3 id="feedback-overlay" className="invisible" onClick={this.clearFeedback}>{this.getResponse()}</h3>
         <div className="DisplayScore">
           <p>Your total score is: {this.context.nextWord ? this.context.nextWord.totalScore : null}</p>
