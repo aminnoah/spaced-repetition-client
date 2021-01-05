@@ -1,7 +1,7 @@
 header {
   padding:20px;
   /* background-color:red; */
-  background:rgb(0, 191, 255, .075);
+  background:rgba(147, 219, 30, 0.075);
 
 }
 
@@ -15,7 +15,7 @@ header {
 .header-content > * { flex: 3 }
 
 .hello {
-  color: yellow;
+  color: rgba(231, 10, 10, 0.774);
   font-weight:bold;
   font-size: large;
 }
@@ -31,7 +31,7 @@ nav {
 
 /*  spaced repetition link  */
 .spaced-rep-link {
-color:white;
+  color: rgba(231, 10, 10, 0.774);
 text-decoration:none;
 }
 

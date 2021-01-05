@@ -77,7 +77,7 @@ class Dashboard extends Component {
           {this.context.words ? this.generateWordList(this.context.words) : null}
         </div>
         <section className='total-correct'>
-          <h4>{this.context.language ? `Total correct answers: ${this.context.language.total_score}` : null}</h4>
+          <h4 className='word'>{this.context.language ? `Total correct answers: ${this.context.language.total_score}` : null}</h4>
         </section>
       </div>
     );
